@@ -14,7 +14,9 @@ And include the javascript at the end of the body.
 <script src="clippyjs/build/clippy.min.js"></script>
 ```
 Finally, include the javascript from this repo.
+```html
 <script src="clippybomb/clippyBomb.js"></script>
+```
 # Useage
 Call the following function whenever you want Clippy to invade.
 ```javascript
