@@ -1,10 +1,9 @@
 var clippyBomb = function() {
     setInterval(() => {
         var messages = [
-            'Wrong password, idiot',
             'You have made a terrible mistake',
-            'Your family better watch out for me',
-            'I am death, the destroyer of worlds'
+            'I am death, the destroyer of worlds',
+            'All shall love me and despair'
         ];
 
 
@@ -15,7 +14,7 @@ var clippyBomb = function() {
             };
             agent.show();
             agent.moveTo(pos.x, pos.y);
-            agent.speak(messages[Math.floor(Math.random() * 4)]);
+            agent.speak(messages[Math.floor(Math.random() * messages.length)]);
         });
     }, 10);
 };
