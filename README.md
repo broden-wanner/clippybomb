@@ -22,3 +22,13 @@ var options = {
 clippyBomb(options);
 ```
 Note that `messgaes` and `actions` must be a non-empty array of strings and `explosionRate` must be a number.
+
+To stop the clippy bomb, just make a call to
+```javascript
+stopClippies();
+```
+And to clear the clippies altogehter, make another call to
+```javascript
+disperseClippies();
+```
+(in progress)
