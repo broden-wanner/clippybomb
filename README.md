@@ -12,4 +12,13 @@ Call the following function whenever you want Clippy to invade.
 ```javascript
 clippyBomb();
 ```
+To customize the messages, actions, and explosion rate of clippy, pass in an object that looks like the following.
+```javascript
+var options = {
+    messages: ['I do not like you', 'You smell'],
+    actions: ['Searching', 'Show'],
+    explosionRate: 30
+}
+```
+Note that `messgaes` and `actions` must be a non-empty array of strings and `explosionRate` must be a number.
 # Demo
