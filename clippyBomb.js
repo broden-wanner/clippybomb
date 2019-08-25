@@ -3,7 +3,7 @@ var clippyBomb = function(options) {
     var actions = options.actions;
     var explosionRate = options.explosionRate ? options.explosionRate : 10;
     
-    setInterval(() => {        
+    var intervalId = setInterval(() => {        
         if (!messages || messages.length === 0) {
             messages = [
                 'You have made a terrible mistake',
@@ -33,4 +33,12 @@ var clippyBomb = function(options) {
             agent.speak(messages[Math.floor(Math.random() * messages.length)]);
         });
     }, explosionRate);
+    window.clippyBombIntervalId = intervalId;
+    return intervalId;
+};
+
+var stopClippies = function() {
+    if (window.clippyBombIntervalId) {
+        clearInterval(window.clippyBombIntervalId);
+    }
 };
