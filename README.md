@@ -19,6 +19,6 @@ var options = {
     actions: ['Searching', 'Show'],
     explosionRate: 30
 }
+clippyBomb(options);
 ```
 Note that `messgaes` and `actions` must be a non-empty array of strings and `explosionRate` must be a number.
-# Demo
